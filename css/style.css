@@ -2,6 +2,10 @@
   outline: none;
 }
 
+body {
+  background: #fff;
+}
+
 .___button_callback {
   width: 179px;
   height: 22px;
@@ -43,7 +47,6 @@
   font-family: "Roboto Condensed Light Italic";
   font-size: 20px;
   font-weight: 300;
-  font-style: italic;
   margin-top: 35px;
 }
 .header_top__address {
@@ -345,8 +348,40 @@
 */
 .mersedes {
   margin-top: 95px;
-  height: 122px;
-  background-color: #deeef1;
+  position: relative;
+}
+.mersedes_box {
+  background-image: url("../img/fig-14.png");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: 1918px 269px;
+}
+.mersedes_box._second {
+  background-position: center top;
+  margin-top: 50px;
+}
+.mersedes_box._third {
+  background-position: center top;
+  margin-top: 50px;
+}
+.mersedes_image._second {
+  width: 353px;
+  height: 493px;
+  background-image: url("../img/fig-17.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: 353px 493px;
+}
+.mersedes_image._third {
+  width: 371px;
+  height: 579px;
+  background-image: url("../img/fig-18.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: 371px 579px;
 }
 .mersedes_title {
   color: #323232;
@@ -355,6 +390,8 @@
   line-height: 122px;
   font-weight: 300;
   text-align: center;
+  height: 122px;
+  background-color: #deeef1;
 }
 .mersedes_image {
   margin-top: 40px;
@@ -365,6 +402,118 @@
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: 347px 500px;
+}
+.mersedes_header {
+  margin-top: 70px;
+  color: #323232;
+  font-family: "Roboto Condensed Regular";
+  font-weight: 400;
+  font-size: 30px;
+}
+.mersedes_description {
+  margin-top: 15px;
+  color: #323232;
+  font-family: "Roboto Condensed Regular";
+  font-weight: 400;
+  font-size: 18px;
+}
+.mersedes_functions {
+  margin-top: 30px;
+}
+.mersedes_functions__function {
+  color: #323232;
+  font-family: "Roboto Condensed Light";
+  font-size: 22px;
+  font-weight: 300;
+  margin-bottom: 5px;
+}
+.mersedes_functions__function.___rehau .mersedes_functions__function_1___icon {
+  margin: 0 15px 0 5px;
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  background-image: url("../img/fig-11.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: 22px 22px;
+}
+.mersedes_functions__function.___rehau .mersedes_functions__function_2___icon {
+  margin: 0 5px 0 5px;
+  display: inline-block;
+  width: 31px;
+  height: 23px;
+  background-image: url("../img/fig-12.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: 31px 23px;
+}
+.mersedes_functions__function.___rehau .mersedes_functions__function_3___icon {
+  margin: 0 10px 0 10px;
+  display: inline-block;
+  width: 20px;
+  height: 22px;
+  background-image: url("../img/fig-13.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: 20px 22px;
+}
+.mersedes_functions__function.___g-u .mersedes_functions__function_1___icon {
+  margin: 0 15px 0 5px;
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  background-image: url("../img/fig-15.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: 22px 22px;
+}
+.mersedes_functions__function.___g-u .mersedes_functions__function_2___icon {
+  margin: 0 10px 0 5px;
+  display: inline-block;
+  width: 25px;
+  height: 23px;
+  background-image: url("../img/fig-16.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: 25px 23px;
+}
+.mersedes_functions__function.___gcgs {
+  border: 2px solid #f7c604;
+  padding: 10px 25px;
+  text-align: center;
+  display: inline-block;
+}
+
+/*
+** popular_offers
+*/
+.popular_offers {
+  height: 1120px;
+  background-image: url("../img/fig-19.png");
+  background-size: 1920px 1120px;
+  background-position: center;
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+}
+.popular_offers__title {
+  font-family: "Roboto Condensed Bold";
+  color: #DC0B12;
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 20px;
+}
+.popular_offers__description {
+  font-family: "Roboto Condensed Light";
+  color: #323232;
+  font-size: 25px;
+  font-weight: 300;
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */

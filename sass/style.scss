@@ -2,13 +2,13 @@
     outline: none;
 }
 
+body {
+    background: #fff;
+}
+
 @import "core";
 @import "base/_modifiers";
 @import "project/01-header";
 @import "project/02-four_reasons";
 @import "project/03-mersedes";
-
-
-
-
-
+@import "project/04-popular_offers";
