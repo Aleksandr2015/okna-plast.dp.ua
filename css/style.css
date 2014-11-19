@@ -1,5 +1,22 @@
+* {
+  outline: none;
+}
+
+.___button_callback {
+  width: 179px;
+  height: 22px;
+  line-height: 22px;
+}
+
+.___button_in_form {
+  width: 199px;
+  height: 35px;
+  line-height: 30px;
+  margin-top: -1px;
+}
+
 /* 
-** Header
+** header
 */
 .header {
   position: relative;
@@ -9,23 +26,345 @@
   background: #fff;
 }
 .header_top__logo {
-  margin-left: -15px;
+  position: absolute;
+  z-index: 10;
+  margin-left: -41px;
   width: 200px;
   height: 151px;
   background-image: url("../img/fig-1.png");
+  background-size: 200px 151px;
+  background-position: center;
+  background-attachment: scroll;
   background-repeat: no-repeat;
 }
 .header_top__slogan {
   color: #9C9E9F;
-  font-family: "Roboto Condensed";
+  display: inline-block;
+  font-family: "Roboto Condensed Light Italic";
   font-size: 20px;
   font-weight: 300;
   font-style: italic;
+  margin-top: 35px;
+}
+.header_top__address {
+  display: inline-block;
+  font-family: "Roboto Condensed Regular";
+  font-weight: 400;
+  color: #414141;
+  font-size: 14px;
+  margin-top: 8px;
+}
+.header_top__worktime {
+  display: inline-block;
+  margin-top: 5px;
+  font-family: "Roboto Condensed Regular";
+  font-weight: 400;
+  color: #9C9E9F;
+  font-size: 12px;
+}
+.header_top__phones {
+  display: inline-block;
+  color: #000;
+  font-family: "Roboto Condensed Light";
+  font-size: 20px;
+  font-weight: 300;
+  margin-top: 8px;
+}
+.header_main {
+  position: relative;
+  z-index: 1;
+  margin: 0 auto;
+  height: 750px;
+  background-image: url("../img/fig-2.png");
+  background-size: 1920px 750px;
+  background-position: center;
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+}
+.header_main__button {
+  background-color: #0F0F0F;
+  background-image: -webkit-linear-gradient(bottom, #0189CD 0%, #39ADE6 100%);
+  background-image: linear-gradient(to top, #0189CD 0%, #39ADE6 100%);
+  border-radius: 3px;
+  color: #FFF;
+  font-family: "Roboto Condensed Regular";
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 15px;
+  cursor: pointer;
+}
+.header_main__title {
+  display: inline-block;
+  margin-top: 25px;
+  font-family: "Roboto Condensed Bold";
+  color: #0B84C2;
+  font-size: 34px;
+  line-height: 40px;
+  font-weight: 700;
+}
+.header_main__description {
+  display: inline-block;
+  margin-top: 25px;
+  font-family: "Roboto Condensed Regular";
+  color: #323232;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 31px;
+}
+.header_main__discount {
+  display: inline-block;
+  margin-top: 40px;
+  width: 350px;
+  height: 35px;
+  background-image: url("../img/fig-3.png");
+  background-size: 350px 35px;
+  text-align: center;
+  color: #FFF;
+  font-family: "Roboto Condensed Regular";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 35px;
+  padding-left: 7px;
+  margin-left: -10px;
+}
+.header_main__find_out_the_cost {
+  width: 790px;
+  height: 184px;
+  margin: 145px auto 0;
+  width: 790px;
+  height: 184px;
+  background-image: url("../img/fig-4.png");
+  background-size: 790px 184px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: scroll;
+  padding-top: 30px;
+}
+.header_main__find_out_the_cost___title {
+  color: #0F0F0F;
+  font-family: "Roboto Condensed Bold";
+  font-size: 22px;
+  font-weight: 700;
+  text-align: center;
+  display: block;
+}
+.header_main__find_out_the_cost___description {
+  color: #0F0F0F;
+  font-family: "Roboto Condensed Regular";
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+  display: block;
+}
+.header_main__find_out_the_cost___form {
+  width: 780px;
+  margin: 30px auto 0;
+}
+.header_main__find_out_the_cost___form .form-group {
+  margin-left: 0;
+  margin-right: 0;
+  width: 100%;
+}
+.header_main__find_out_the_cost___form .input-group {
+  width: 221px;
+  height: 32px;
+  float: left;
+  margin-right: 20px;
+  background-color: #FFF;
+  border: 1px solid #C2C2C2;
+  border-radius: 3px;
+}
+.header_main__find_out_the_cost___form .input-group:first-child {
+  margin-left: 47px;
+}
+.header_main__find_out_the_cost___form .input-group-addon {
+  height: 32px;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+}
+.header_main__find_out_the_cost___form .form-control {
+  color: #B7B7B7;
+  font-family: "Roboto Condensed Regular";
+  font-size: 15px;
+  font-weight: 400;
+  width: 100%;
+  height: 32px !important;
+  padding-left: 0;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+}
+.header_main__find_out_the_cost___form____button {
+  background-color: #0F0F0F;
+  background-image: -webkit-linear-gradient(bottom, #0189CD 0%, #39ADE6 100%);
+  background-image: linear-gradient(to top, #0189CD 0%, #39ADE6 100%);
+  border-radius: 3px;
+  color: #FFF;
+  font-family: "Roboto Condensed Regular";
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+}
+.header_main__find_out_the_cost___form____button:hover, .header_main__find_out_the_cost___form____button:active, .header_main__find_out_the_cost___form____button:focus {
+  outline: none;
+  border: none;
+}
+.header_main__find_out_the_cost___form .form-icon-name {
+  display: inline-block;
+  width: 16px;
+  height: 18px;
+  background-image: url("../img/fig-5.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 16px 18px;
+  background-attachment: scroll;
+}
+.header_main__find_out_the_cost___form .form-icon-phone {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  background-image: url("../img/fig-6.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: scroll;
+}
+.header_advantages {
+  height: 150px;
+  background-color: #f7c604;
+  padding-top: 20px;
+}
+.header_advantages__title {
+  color: #323232;
+  font-family: "Roboto Condensed Regular";
+  font-weight: 400;
+  font-size: 40px;
+  text-align: center;
+  display: block;
+}
+.header_advantages__description {
+  color: #323232;
+  font-family: "Roboto Condensed Regular";
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+  display: block;
 }
 
-.header_top {
-  height: 100px;
-  background: #fff;
+/* 
+** four_reasons
+*/
+.four_reasons__title {
+  text-transform: uppercase;
+  color: #323232;
+  font-family: "Roboto Condensed Light";
+  font-size: 40px;
+  font-weight: 300;
+  text-align: center;
+  margin: 30px auto 0;
+}
+.four_reasons__reason {
+  height: 50px;
+  background-image: url("../img/fig-7.png");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: 506px 50px;
+  margin-top: 30px;
+}
+.four_reasons__reason___number {
+  display: inline-block;
+  height: 50px;
+  width: 60px;
+  line-height: 50px;
+  color: #323232;
+  font-family: "Roboto Condensed Regular";
+  font-size: 30px;
+  font-weight: 400;
+  text-align: center;
+}
+.four_reasons__reason___name {
+  display: inline;
+  height: 50px;
+  width: 100%;
+  line-height: 50px;
+  font-family: "Roboto Condensed Regular";
+  color: #323232;
+  font-size: 25px;
+  font-weight: 400;
+  text-align: center;
+  margin-left: 15px;
+}
+.four_reasons__reason.____second {
+  width: 704px;
+  height: 50px;
+  background-image: url("../img/fig-8.png");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: 704px 50px;
+}
+.four_reasons__reason.____third {
+  width: 673px;
+  height: 50px;
+  background-image: url("../img/fig-9.png");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: 673px 50px;
+}
+.four_reasons__description {
+  font-family: "Roboto Condensed Regular";
+  color: #6C6C6C;
+  font-size: 18px;
+  font-weight: 400;
+  margin-left: 80px;
+  margin-top: 15px;
+}
+.four_reasons__result {
+  display: inline-block;
+  padding-left: 15px;
+  height: 40px;
+  line-height: 20px;
+  border-left: 3px solid #f7c604;
+  font-family: "Roboto Condensed Bold";
+  color: #323232;
+  font-size: 18px;
+  font-weight: 700;
+  margin-left: 80px;
+  margin-top: 15px;
+}
+
+/*
+** mersedes
+*/
+.mersedes {
+  margin-top: 95px;
+  height: 122px;
+  background-color: #deeef1;
+}
+.mersedes_title {
+  color: #323232;
+  font-family: "Roboto Condensed Light";
+  font-size: 40px;
+  line-height: 122px;
+  font-weight: 300;
+  text-align: center;
+}
+.mersedes_image {
+  margin-top: 40px;
+  width: 347px;
+  height: 500px;
+  background-image: url("../img/fig-10.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: 347px 500px;
 }
 
 /*# sourceMappingURL=style.css.map */

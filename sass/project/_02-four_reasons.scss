@@ -1,0 +1,87 @@
+/* 
+** four_reasons
+*/
+
+.four_reasons {
+    &__title {
+        text-transform: uppercase;        
+        color: #323232;
+        font-family: "Roboto Condensed Light";
+        font-size: 40px;
+        font-weight: 300;
+        text-align: center;
+        margin: 30px auto 0;
+    }
+    &__reason {        
+        height: 50px;
+        background-image: url('../img/fig-7.png');
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-size: 506px 50px;
+        margin-top: 30px;
+        
+        &___number {
+            display: inline-block;
+            height: 50px;
+            width: 60px;
+            line-height: 50px;            
+            color: #323232;
+            font-family: "Roboto Condensed Regular";
+            font-size: 30px;
+            font-weight: 400;
+            text-align: center;
+        }
+        &___name {            
+            display: inline;
+            height: 50px;
+            width: 100%;
+            line-height: 50px;            
+            font-family: "Roboto Condensed Regular";
+            color: #323232;
+            font-size: 25px;
+            font-weight: 400;
+            text-align: center;
+            margin-left: 15px;            
+        }        
+    }
+    &__reason.____second {
+        width: 704px;
+        height: 50px;
+        background-image: url('../img/fig-8.png');                
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-size: 704px 50px;
+    }
+    &__reason.____third {
+        width: 673px;
+        height: 50px;
+        background-image: url('../img/fig-9.png');
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-size: 673px 50px;
+    }
+    &__description {        
+        font-family: "Roboto Condensed Regular";
+        color: #6C6C6C;
+        font-size: 18px;
+        font-weight: 400;
+        margin-left: 80px;
+        margin-top: 15px;
+    }
+    &__result {
+        display: inline-block;
+        padding-left: 15px;
+        height: 40px;
+        line-height: 20px;
+        border-left: 3px solid #f7c604;
+        font-family: "Roboto Condensed Bold";
+        color: #323232;
+        font-size: 18px;
+        font-weight: 700;
+        margin-left: 80px;
+        margin-top: 15px;
+    }
+}

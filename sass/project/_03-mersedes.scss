@@ -1,0 +1,28 @@
+/*
+** mersedes
+*/
+
+.mersedes {
+    margin-top: 95px;
+    height: 122px;
+    background-color: #deeef1;
+    &_title {
+        color: #323232;
+        font-family: "Roboto Condensed Light";
+        font-size: 40px;
+        line-height: 122px;
+        font-weight: 300;    
+        text-align: center;
+    }
+    &_image {
+        margin-top: 40px;
+        width: 347px;
+        height: 500px;
+        background-image: url('../img/fig-10.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-size: 347px 500px;
+    }
+    
+}
