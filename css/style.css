@@ -1,6 +1,28 @@
 /* 
 ** Header
 */
+.header {
+  position: relative;
+}
+.header_top {
+  height: 100px;
+  background: #fff;
+}
+.header_top__logo {
+  margin-left: -15px;
+  width: 200px;
+  height: 151px;
+  background-image: url("../img/fig-1.png");
+  background-repeat: no-repeat;
+}
+.header_top__slogan {
+  color: #9C9E9F;
+  font-family: "Roboto Condensed";
+  font-size: 20px;
+  font-weight: 300;
+  font-style: italic;
+}
+
 .header_top {
   height: 100px;
   background: #fff;

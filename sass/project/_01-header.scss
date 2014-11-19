@@ -2,6 +2,29 @@
 ** Header
 */
 
+.header {
+    position: relative;
+    &_top{
+        height: 100px;
+        background: #fff;
+        &__logo {
+            margin-left: -15px;
+            width: 200px;
+            height: 151px;
+            background-image: url('../img/fig-1.png');
+            background-repeat: no-repeat;
+        }
+        &__slogan {        
+            color: #9C9E9F;
+            font-family: "Roboto Condensed";
+            font-size: 20px;
+            font-weight: 300;
+            font-style: italic;        
+        }
+    }
+}
+
+
 .header_top {
     height: 100px;
     background: #fff;
