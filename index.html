@@ -24,6 +24,8 @@
     <script src="http://code.jquery.com/jquery-latest.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
     
+    <!-- Carousel -->
+    <script src="js/jquery.jcarousellite.js"></script>
     <!-- Google map -->
     <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
 		<script type="text/javascript">
@@ -749,58 +751,171 @@
                 <div class="col-xs-12">
                     
                     <div class="reviews_title">
-<!--                        Отзывы наших клиентов-->
+                        Отзывы наших клиентов
                     </div>
                     
                 </div><!-- col-xs- / end -->
                 
-                <!-- left image -->
-                <div class="col-xs-3">
+            </div>
+              
+        </div>
+               
+        <div class="container">
                 
-                    <div class="reviews_image _1"></div>
+            <div class="row imageSlider">
                 
-                </div><!-- col-xs- / end -->
+                    <ul>
+                    
+                        <li>
                 
-                
-                <!-- Right content -->
-                <div class="col-xs-8 col-xs-offset-1">
-                
-                    <div class="reviews_review">
-                        
-                        <div class="reviews_review__title">
-<!--                            Александр Гончаров-->
+                    <!-- left image -->
+                    <div class="col-xs-3">
+
+                        <div class="reviews_image _1"></div>
+
+                    </div><!-- col-xs- / end -->
+
+                    <!-- Right content -->
+                    <div class="col-xs-8 col-xs-offset-1">
+
+                        <div class="reviews_review" id="accordion">
+
+                            <div class="reviews_review__title">
+                                Александр Гончаров
+                            </div>
+
+                            <div class="reviews_review__social_link">
+                                <span class="reviews_review__social_link___icon"></span>
+                                <a class="reviews_review__social_link___link clearfix" href="http://vk.com/aleksandr.honcharov" target="_blank">Посмотреть профиль покупателя</a>
+                            </div>
+
+                            <div class="reviews_review__blockqoute">
+                                Steel Plast - одна из тех немногих компаний, в которых "качество" ставят на <br>более высокий уровень, нежели "количество".
+                            </div>
+
+                            <div class="reviews_review__text">
+                                Заказал у вас окна, потому что находитесь близко к моему дому. Как оказалось, <br>
+                                хорошие специалисты, грамотно, понятно и доходчиво объяснили, что по итогу я <br>
+                                получу за свои деньги.
+                            </div>
+
+                            <div class="reviews_review__more_link collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Читать дальше                            
+                            </div>
+
+                            <div class="reviews_review__text_full panel-collapse collapse" id="collapseTwo" role="tabpanel" aria-labelledby="headingTwo">
+
+                                <p>Окна стоят уже более 3-х лет. За это время в окне на кухне только почистили резиночки уплотнителей от пыли и по совету Виктора подрегулировали. Двухкамерный стеклопакет себя оправдал в плане шумо- и термоизоляции вполне. Окнами лично я доволен.</p>
+
+                                <p>Пришел с полным отсутствием понимания, какие бывают окна, и с чем их едят. Наталья помогла подобрать профиль и фурнитуру, и даже посоветовала ручки поменять на более прочные, о чем ни капельки не жалею. У родителей простые ручки, и они уже болтаются, а мои - стояли, стоят и стоять будут. :)</p>
+
+                                <p>После оформления и оплаты заказа монтажники приехали и сделали все быстро четко и качественно.</p>
+
+                                <p>Запомнилось человеческое отношение и доходчивое объяснение Натальи и Качественная работа Виктора. Steel Plast - одна из тех немногих компаний, в которых "качество" ставят на более высокий уровень нежели "количество". Приятно работать с профессионалами.</p>
+
+                            </div>
+
                         </div>
-                        
-                        <div class="reviews_review__social_link">
-                            <span class="reviews_review__social_link___icon">
-                        </div>
-                        
-                        <div class="reviews_review__blockqoute">
-                        
-                        </div>
-                        
-                        <div class="reviews_review__text">
-                        
-                        </div>
-                        
-                        <div class="reviews_review__more_link">
-<!--                            Читать дальше                            -->
-                        </div>
-                        
+
                     </div>
+
+                    <!-- Divider -->
+                    <div class="col-xs-12">
+
+                        <hr class="reviews_divider">
+
+                    </div>
+                    
+                        </li>
+                        
+                        <li>
                 
+                    <!-- left image -->
+                    <div class="col-xs-3">
+
+                        <div class="reviews_image _1"></div>
+
+                    </div><!-- col-xs- / end -->
+
+                    <!-- Right content -->
+                    <div class="col-xs-8 col-xs-offset-1">
+
+                        <div class="reviews_review" id="accordion">
+
+                            <div class="reviews_review__title">
+                                Александр Гончаров 2
+                            </div>
+
+                            <div class="reviews_review__social_link">
+                                <span class="reviews_review__social_link___icon"></span>
+                                <a class="reviews_review__social_link___link clearfix" href="http://vk.com/aleksandr.honcharov" target="_blank">Посмотреть профиль покупателя</a>
+                            </div>
+
+                            <div class="reviews_review__blockqoute">
+                                Steel Plast - одна из тех немногих компаний, в которых "качество" ставят на <br>более высокий уровень, нежели "количество".
+                            </div>
+
+                            <div class="reviews_review__text">
+                                Заказал у вас окна, потому что находитесь близко к моему дому. Как оказалось, <br>
+                                хорошие специалисты, грамотно, понятно и доходчиво объяснили, что по итогу я <br>
+                                получу за свои деньги.
+                            </div>
+
+                            <div class="reviews_review__more_link collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Читать дальше                            
+                            </div>
+
+                            <div class="reviews_review__text_full panel-collapse collapse" id="collapseTwo" role="tabpanel" aria-labelledby="headingTwo">
+
+                                <p>Окна стоят уже более 3-х лет. За это время в окне на кухне только почистили резиночки уплотнителей от пыли и по совету Виктора подрегулировали. Двухкамерный стеклопакет себя оправдал в плане шумо- и термоизоляции вполне. Окнами лично я доволен.</p>
+
+                                <p>Пришел с полным отсутствием понимания, какие бывают окна, и с чем их едят. Наталья помогла подобрать профиль и фурнитуру, и даже посоветовала ручки поменять на более прочные, о чем ни капельки не жалею. У родителей простые ручки, и они уже болтаются, а мои - стояли, стоят и стоять будут. :)</p>
+
+                                <p>После оформления и оплаты заказа монтажники приехали и сделали все быстро четко и качественно.</p>
+
+                                <p>Запомнилось человеческое отношение и доходчивое объяснение Натальи и Качественная работа Виктора. Steel Plast - одна из тех немногих компаний, в которых "качество" ставят на более высокий уровень нежели "количество". Приятно работать с профессионалами.</p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Divider -->
+                    <div class="col-xs-12">
+
+                        <hr class="reviews_divider">
+
+                    </div>
+                    
+                        </li>
+                    
+                    </ul>                
+            
+            </div>
+               
+            <div class="row">
+                
+                <!-- Bottom reviews navigation left -->
+                <div class="col-xs-6 clearfix prev">
+                    
+                    <div class="reviews_previous_review">
+                        
+                        <span class="reviews_previous_review_text">Предыдущий отзыв</span>
+                    
+                    </div>
+                    
                 </div>
                 
-                <hr>
-                
-                <!-- bottom reviews navigation left -->
-                <div class="col-xs-6">
-                
-                </div>
-                
-                <!-- bottom reviews navigation right-->
-                <div class="col-xs-6">
-                
+                <!-- Bottom reviews navigation right-->
+                <div class="col-xs-6 clearfix next">
+                    
+                    <div class="reviews_next_review">
+                        
+                        <span class="reviews_next_review_text">Следующий отзыв</span>
+                    
+                    </div>
+                    
                 </div>
                 
             </div><!-- .row / end-->
@@ -956,6 +1071,15 @@
 
     </footer>   
     <!-- 12 - footer / End -->    
-
+    
+    <!-- Carousel script -->
+    <script>
+        $(".imageSlider").jCarouselLite({
+            btnNext: ".next",
+            btnPrev: ".prev",
+            visible: 1,
+            speed: 500
+        });
+    </script>
 </body>
 </html>

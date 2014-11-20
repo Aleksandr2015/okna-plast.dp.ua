@@ -1,10 +1,149 @@
 /*
-** ten_years_warranty
+** reviews
 */
 
 .reviews {
     &_title {
         text-align: center;
-        text-transform: uppercase;
+        text-transform: uppercase;        
+        color: #323232;
+        font-family: "Roboto Condensed Light";
+        font-size: 40px;
+        font-weight: 300;
+        margin: 60px 0 40px;
+    }
+    &_image._1 {
+        width: 240px;
+        height: 240px;
+        background-image: url('../img/fig-31.png');
+        background-size: 240px 240px;
+        background-position: center;
+        background-attachment: scroll;
+        background-repeat: no-repeat;
+    }
+    &_review {
+        margin-left: -15px;
+        &__title {
+            color: #323232;
+            font-family: "Roboto Condensed Regular";
+            font-size: 30px;
+            font-weight: 400;
+            text-align: left;
+        }
+        &__social_link {                 
+            margin-top: 10px;
+            cursor: pointer;
+            &___icon {
+                display:inline-block;
+                width: 23px;
+                height: 23px;
+                background-image: url('../img/fig-32.png');
+                background-size: 23px 23px;
+                background-position: center;
+                background-attachment: scroll;
+                background-repeat: no-repeat;
+                margin-right: 5px;
+                float: left;
+            }
+            &___link {
+                display: inline-block;
+                height: 23px;
+                line-height: 23px;
+                color: #3A5783;
+                font-family: "Roboto Condensed Regular";
+                font-size: 16px;
+                font-weight: 400;
+                text-decoration: underline;
+                &:hover, &:active, &:focus {
+                    color: #3A5783;
+                }
+            }       
+        }
+        &__blockqoute {
+            margin-top: 20px;
+            color: #323232;
+            font-family: "Roboto Condensed Bold";
+            font-size: 18px;
+            font-weight: 700;
+            padding-left: 45px;
+            background-image: url('../img/fig-33.png');
+            background-size: 35px 39px;
+            background-position: left top;
+            background-attachment: scroll;
+            background-repeat: no-repeat;
+        }
+        &__text {
+            margin-top: 20px;
+            color: #323232;
+            font-family: "Roboto Condensed Regular";
+            font-size: 18px;
+            font-weight: 400;
+        }
+        &__more_link { 
+            margin-top: 20px;
+            color: #0B84C2;
+            display: inline-block;
+            padding-bottom: 3px;
+            font-family: "Roboto Condensed Regular";
+            font-size: 16px;
+            font-weight: 400;
+            cursor: pointer;            
+            border-bottom:1px dashed #0B84C2;
+        }
+        &__text_full {
+            color: #323232;
+            font-family: "Roboto Condensed Regular";
+            font-size: 18px;
+            font-weight: 400;
+            & p:first-child {
+                margin-top: 20px;
+            }
+        }
+        
+    }
+    &_divider {
+        margin: 40px 0 20px 0;
+    }
+    &_previous_review {
+        cursor: pointer;
+        color: #0B84C2;
+        font-family: "Roboto Condensed Regular";
+        font-size: 18px;
+        height: 16px;
+        line-height: 16px;
+        font-weight: 400;
+        text-align: left;
+        padding-left: 36px;        
+        background-image: url('../img/fig-34.png');
+        background-size: 26px 16px;
+        background-position: center left;
+        background-attachment: scroll;
+        background-repeat: no-repeat;          
+        &_text {
+            display: inline-block;
+            padding-bottom: 3px;        
+            border-bottom: 1px solid #0B84C2;
+        }
+    }
+    &_next_review {
+        cursor: pointer;
+        color: #0B84C2;
+        font-family: "Roboto Condensed Regular";
+        font-size: 18px;
+        height: 16px;
+        line-height: 16px;
+        font-weight: 400;
+        text-align: right;
+        padding-right: 36px;        
+        background-image: url('../img/fig-35.png');
+        background-size: 26px 16px;
+        background-position: center right;
+        background-attachment: scroll;
+        background-repeat: no-repeat;
+        &_text {
+            display: inline-block;
+            padding-bottom: 3px;        
+            border-bottom: 1px solid #0B84C2;
+        }
     }
 }
