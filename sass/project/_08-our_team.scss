@@ -3,5 +3,50 @@
 */
 
 .our_team {
-    
+    &_title {
+        text-align: center;
+        margin: 40px 0;
+        line-height: 40px;
+        color: #323232;
+        font-family: "Roboto Condensed Light";
+        font-size: 40px;
+        font-weight: 300;
+    }
+    &_sertified {
+        border: 2px solid #f7c604;
+        padding: 10px 25px;
+        text-align: center;
+        display: table;
+        margin: 0 auto 70px;
+        color: #323232;
+        font-family: "Roboto Condensed Light";
+        font-size: 30px;
+        font-weight: 300;        
+    }
+    &_item {
+        margin-bottom: 50px;
+        display: table;
+        &__title {
+            font-family: "Roboto Condensed Regular";
+            color: #323232;
+            font-size: 30px;
+            font-weight: 400;
+            line-height: 34px;
+        }
+        &__position {
+            font-family: "Roboto Condensed Bold";
+            color: #323232;
+            color: #6C6C6C;
+            font-size: 18px;
+            font-weight: 700;
+            margin: 15px 0;
+        }
+        &__description {
+            font-family: "Roboto Condensed Regular";
+            color: #323232;
+            color: #323232;
+            font-size: 18px;
+            font-weight: 400;
+        }
+    }
 }

@@ -10,6 +10,7 @@ body {
   width: 179px;
   height: 22px;
   line-height: 22px;
+  z-index: 5;
 }
 
 .___button_in_form {
@@ -17,12 +18,21 @@ body {
   height: 35px;
   line-height: 30px;
   margin-top: -1px;
+  z-index: 5;
 }
 
 .___button_offers {
   width: 140px;
   height: 22px;
   line-height: 22px;
+  z-index: 5;
+}
+
+.___button_how_we_work {
+  width: 121px;
+  height: 26px;
+  line-height: 26px;
+  z-index: 5;
 }
 
 /* 
@@ -749,6 +759,9 @@ body {
 /*
 ** reviews
 */
+.reviews {
+  padding-bottom: 15px;
+}
 .reviews_title {
   text-align: center;
   text-transform: uppercase;
@@ -815,7 +828,7 @@ body {
   padding-left: 45px;
   background-image: url("../img/fig-33.png");
   background-size: 35px 39px;
-  background-position: left top;
+  background-position: left 7px;
   background-attachment: scroll;
   background-repeat: no-repeat;
 }
@@ -892,12 +905,130 @@ body {
   border-bottom: 1px solid #0B84C2;
 }
 
+.imageSlider li {
+  height: auto !important;
+}
+
 /*
 ** how_we_work
 */
+.how_we_work {
+  background: #edf5f6;
+  margin-top: 60px;
+}
+.how_we_work .container {
+  position: relative;
+}
+.how_we_work_line_left {
+  position: absolute;
+  top: 165px;
+  left: 90px;
+  z-index: 1;
+}
+.how_we_work_line_middle {
+  position: absolute;
+  top: 165px;
+  left: 415px;
+  z-index: 1;
+}
+.how_we_work_line_right {
+  position: absolute;
+  top: 165px;
+  right: 15px;
+  z-index: 1;
+}
+.how_we_work_title {
+  text-align: center;
+  margin: 40px 0;
+  line-height: 40px;
+  color: #323232;
+  font-family: "Roboto Condensed Light";
+  font-size: 40px;
+  font-weight: 300;
+}
+.how_we_work_item {
+  position: relative;
+  margin-bottom: 80px;
+  margin-right: -15px;
+}
+.how_we_work_item_description {
+  color: #323232;
+  font-family: "Roboto Condensed Regular";
+  font-size: 18px;
+  font-weight: 400;
+  margin: 15px 0 10px;
+}
+.how_we_work_item_button {
+  position: absolute;
+  left: 0;
+  bottom: -40px;
+  background-color: #0F0F0F;
+  background-image: -webkit-linear-gradient(bottom, #0189CD 0%, #39ADE6 100%);
+  background-image: linear-gradient(to top, #0189CD 0%, #39ADE6 100%);
+  border-radius: 3px;
+  color: #FFF;
+  font-family: "Roboto Condensed Regular";
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+}
+.how_we_work_item_button:hover, .how_we_work_item_button:active, .how_we_work_item_button:focus {
+  outline: none;
+  border: none;
+}
+
 /*
 ** our_team
 */
+.our_team_title {
+  text-align: center;
+  margin: 40px 0;
+  line-height: 40px;
+  color: #323232;
+  font-family: "Roboto Condensed Light";
+  font-size: 40px;
+  font-weight: 300;
+}
+.our_team_sertified {
+  border: 2px solid #f7c604;
+  padding: 10px 25px;
+  text-align: center;
+  display: table;
+  margin: 0 auto 70px;
+  color: #323232;
+  font-family: "Roboto Condensed Light";
+  font-size: 30px;
+  font-weight: 300;
+}
+.our_team_item {
+  margin-bottom: 50px;
+  display: table;
+}
+.our_team_item__title {
+  font-family: "Roboto Condensed Regular";
+  color: #323232;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 34px;
+}
+.our_team_item__position {
+  font-family: "Roboto Condensed Bold";
+  color: #323232;
+  color: #6C6C6C;
+  font-size: 18px;
+  font-weight: 700;
+  margin: 15px 0;
+}
+.our_team_item__description {
+  font-family: "Roboto Condensed Regular";
+  color: #323232;
+  color: #323232;
+  font-size: 18px;
+  font-weight: 400;
+}
+
 /*
 ** certificates
 */
