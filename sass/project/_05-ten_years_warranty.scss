@@ -1,0 +1,27 @@
+/*
+** ten_years_warranty
+*/
+
+.ten_years_warranty {
+    background-color: #deeef1;
+    height: 220px;
+    padding-top: 40px;
+    &__block {
+        text-align: center;
+        margin: 0 auto;
+        width: 887px;
+        height: 136px;
+        background-image: url('../img/fig-29.png');
+        background-size: 887px 136px;
+        background-position: center;
+        background-attachment: scroll;
+        background-repeat: no-repeat;
+        &___text {
+            color: #323232;
+            font-family: "Roboto Condensed Light";
+            font-size: 25px;
+            font-weight: 300;
+            line-height: 136px;
+        }
+    }
+}

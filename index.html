@@ -23,9 +23,43 @@
     <![endif]-->    
     <script src="http://code.jquery.com/jquery-latest.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    
+    <!-- Google map -->
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+		<script type="text/javascript">
+			function initialize() {
+				var latlng = new google.maps.LatLng(48.404179, 35.001287);
+				var settings = {
+					zoom: 17,
+					center: latlng,
+					mapTypeControl: true,
+					mapTypeControlOptions: {style: google.maps.MapTypeControlStyle.DROPDOWN_MENU},
+					navigationControl: true,
+					navigationControlOptions: {style: google.maps.NavigationControlStyle.SMALL},
+					mapTypeId: google.maps.MapTypeId.ROADMAP};
+				var map = new google.maps.Map(document.getElementById("map_canvas"), settings);				
+				
+//				var steelplastImage = new google.maps.MarkerImage('img/fig-30.png',
+//					new google.maps.Size(36,59),
+//					new google.maps.Point(0,0),
+//					new google.maps.Point(36,59)
+//				);
+//
+//				var steelplastPos = new google.maps.LatLng(48.404174, 35.001285);
+//
+//				var steelplastMarker = new google.maps.Marker({
+//					position: steelplastPos,
+//					map: map,
+//					icon: steelplastImage,					
+//					title:"Steel Plast",
+//					zIndex: 2
+//				});		
+                
+			}
+		</script>
 </head>
 
-<body>        
+<body onload="initialize()">        
       
     <!-- 01 - header / Start -->
     <header class="header">
@@ -677,8 +711,107 @@
     </section>   
     <!-- 04 - section popular_offers   / End -->
     
-    <!-- section / Start -->
-    <section class="">
+    <!-- 05 - section ten_years_warranty / Start -->
+    <section class="ten_years_warranty">
+    
+        <div class="container">
+            
+            <div class="row">
+                
+                <div class="col-xs-12">
+                    
+                    <div class="ten_years_warranty__block" title="10 лет гарантии на все - на окна, на монтаж">
+                        
+                        <div class="ten_years_warranty__block___text">
+                            Все обязательства мы указываем в договоре и всегда выполняем обещания
+                        </div>
+                        
+                    </div>
+                    
+                </div><!-- col-xs- / end -->
+                
+            </div><!-- .row / end-->
+            
+        </div><!-- .container / end-->
+
+    </section>   
+    <!-- 05 - section ten_years_warranty / End -->
+    
+    <!-- 06 - section reviews / Start -->
+    <section class="reviews">
+    
+        <div class="container">
+            
+            <div class="row">
+                
+                
+                <!-- Title -->
+                <div class="col-xs-12">
+                    
+                    <div class="reviews_title">
+<!--                        Отзывы наших клиентов-->
+                    </div>
+                    
+                </div><!-- col-xs- / end -->
+                
+                <!-- left image -->
+                <div class="col-xs-3">
+                
+                    <div class="reviews_image _1"></div>
+                
+                </div><!-- col-xs- / end -->
+                
+                
+                <!-- Right content -->
+                <div class="col-xs-8 col-xs-offset-1">
+                
+                    <div class="reviews_review">
+                        
+                        <div class="reviews_review__title">
+<!--                            Александр Гончаров-->
+                        </div>
+                        
+                        <div class="reviews_review__social_link">
+                            <span class="reviews_review__social_link___icon">
+                        </div>
+                        
+                        <div class="reviews_review__blockqoute">
+                        
+                        </div>
+                        
+                        <div class="reviews_review__text">
+                        
+                        </div>
+                        
+                        <div class="reviews_review__more_link">
+<!--                            Читать дальше                            -->
+                        </div>
+                        
+                    </div>
+                
+                </div>
+                
+                <hr>
+                
+                <!-- bottom reviews navigation left -->
+                <div class="col-xs-6">
+                
+                </div>
+                
+                <!-- bottom reviews navigation right-->
+                <div class="col-xs-6">
+                
+                </div>
+                
+            </div><!-- .row / end-->
+            
+        </div><!-- .container / end-->
+
+    </section>   
+    <!-- 06 - section reviews  / End -->
+    
+    <!-- 07 - section how-we-work / Start -->
+    <section class="how_we_work">
     
         <div class="container">
             
@@ -695,10 +828,10 @@
         </div><!-- .container / end-->
 
     </section>   
-    <!-- section  / End -->
+    <!-- 07 - section how-we-work  / End -->
     
-    <!-- section / Start -->
-    <section class="">
+    <!-- 08 - section our_team / Start -->
+    <section class="our_team">
     
         <div class="container">
             
@@ -715,13 +848,114 @@
         </div><!-- .container / end-->
 
     </section>   
-    <!-- section  / End -->
+    <!-- 08 - section our_team  / End -->
+        
+    <!-- 09 - section certificates / Start -->
+    <section class="certificates">
+    
+        <div class="container">
+            
+            <div class="row">
+                
+                <div class="col-xs-">
+                    
+                    
+                    
+                </div><!-- col-xs- / end -->
+                
+            </div><!-- .row / end-->
+            
+        </div><!-- .container / end-->
 
-    <!-- Footer / Start -->
-    <footer class="">
+    </section>   
+    <!-- 09 - section certificates  / End -->
+    
+    <!-- 10 - section still_have_questions / Start -->
+    <section class="still_have_questions">
+    
+        <div class="container">
+            
+            <div class="row">
+                
+                <div class="col-xs-">
+                    
+                    
+                    
+                </div><!-- col-xs- / end -->
+                
+            </div><!-- .row / end-->
+            
+        </div><!-- .container / end-->
+
+    </section>   
+    <!-- 10 - section still_have_questions  / End -->
+    
+    <!-- 11 - section located_near / Start -->
+    <section class="located_near">
+    
+<!--        <div id="map_canvas" style="width:100%; height:515px; margin:0 auto;"></div>            -->
+    
+        <div class="container">
+            
+            <div class="row">
+                
+                <div class="col-xs-">
+                    
+                    
+                    
+                </div><!-- col-xs- / end -->
+                
+            </div><!-- .row / end-->
+            
+        </div><!-- .container / end-->
+
+    </section>   
+    <!-- 11 - section located_near  / End -->        
+
+    <!-- 12 - footer / Start -->
+    <footer class="footer">
+    
+        <div class="container">
+               
+                <div class="row">
+                
+                    <div class="col-xs-2">                   
+                        <div class="header_top__logo"></div>                    
+                    </div>
+
+                    <div class="col-xs-5">
+                        <span class="header_top__slogan">Хорошие окна для вашей семьи</span>
+                    </div>
+
+                    <div class="col-xs-3">
+                        <span class="header_top__address">
+                            Днепропетровск, <br>
+                            ул. Героев Сталинграда, 133 <br>
+                            Салон «Окна, двери»
+                        </span>
+                        <span class="header_top__worktime">Работаем по будням с 9 до 18:00</span>
+                    </div>
+
+                    <div class="col-xs-2 text-right">
+                        <span class="header_top__phones">
+                            (056) 763-70-70<br>
+                            (067) 63-000-62<br>
+                            (066) 28-007-49
+                        </span>
+                    </div>
+                    
+                    <div class="col-xs-12">
+                        
+                        <div class="header_main__button ___button_callback pull-right clearfix">Заказать обратный звонок</div>
+                        
+                    </div>
+                
+                </div><!-- .row / end-->
+                        
+            </div><!-- .container / end-->
 
     </footer>   
-    <!-- Footer / End -->    
+    <!-- 12 - footer / End -->    
 
 </body>
 </html>
