@@ -16,6 +16,7 @@
         font-weight: 700;
         text-align: center;
         margin-top: 20px;
+        text-transform: uppercase;
     }
     &__description {
         font-family: "Roboto Condensed Light";                
@@ -225,4 +226,8 @@
 
 .header_main__find_out_the_cost._po .header_main__find_out_the_cost___form {
     margin-top: 25px;
+}
+
+.header_main__find_out_the_cost._po .form-icon-name {
+    background-size: 15px 17px;
 }

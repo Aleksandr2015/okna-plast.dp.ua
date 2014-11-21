@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   outline: none;
 }
@@ -33,6 +34,15 @@ body {
   height: 26px;
   line-height: 26px;
   z-index: 5;
+}
+
+.plpr {
+  padding-left: 40px;
+  padding-right: 0;
+}
+
+.bl {
+  display: block !important;
 }
 
 /* 
@@ -175,10 +185,11 @@ body {
   font-weight: 400;
   text-align: center;
   display: block;
+  margin-top: 10px;
 }
 .header_main__find_out_the_cost___form {
   width: 780px;
-  margin: 30px auto 0;
+  margin: 20px auto 0;
 }
 .header_main__find_out_the_cost___form .form-group {
   margin-left: 0;
@@ -523,6 +534,7 @@ body {
   font-weight: 700;
   text-align: center;
   margin-top: 20px;
+  text-transform: uppercase;
 }
 .popular_offers__description {
   font-family: "Roboto Condensed Light";
@@ -729,6 +741,10 @@ body {
   margin-top: 25px;
 }
 
+.header_main__find_out_the_cost._po .form-icon-name {
+  background-size: 15px 17px;
+}
+
 /*
 ** ten_years_warranty
 */
@@ -775,6 +791,42 @@ body {
   width: 240px;
   height: 240px;
   background-image: url("../img/fig-31.png");
+  background-size: 240px 240px;
+  background-position: center;
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+}
+.reviews_image._2 {
+  width: 240px;
+  height: 240px;
+  background-image: url("../img/fig-51.png");
+  background-size: 240px 240px;
+  background-position: center;
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+}
+.reviews_image._3 {
+  width: 240px;
+  height: 240px;
+  background-image: url("../img/fig-52.png");
+  background-size: 240px 240px;
+  background-position: center;
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+}
+.reviews_image._4 {
+  width: 240px;
+  height: 240px;
+  background-image: url("../img/fig-53.png");
+  background-size: 240px 240px;
+  background-position: center;
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+}
+.reviews_image._5 {
+  width: 240px;
+  height: 240px;
+  background-image: url("../img/fig-54.png");
   background-size: 240px 240px;
   background-position: center;
   background-attachment: scroll;
@@ -945,6 +997,7 @@ body {
   font-family: "Roboto Condensed Light";
   font-size: 40px;
   font-weight: 300;
+  text-transform: uppercase;
 }
 .how_we_work_item {
   position: relative;
@@ -990,6 +1043,7 @@ body {
   font-family: "Roboto Condensed Light";
   font-size: 40px;
   font-weight: 300;
+  text-transform: uppercase;
 }
 .our_team_sertified {
   border: 2px solid #f7c604;
@@ -1032,14 +1086,97 @@ body {
 /*
 ** certificates
 */
+.certificates {
+  height: 520px;
+  background-image: url("../img/fig-49.png");
+  background-size: 1920px 520px;
+  background-position: center;
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  margin-top: 60px;
+}
+.certificates_title {
+  text-align: center;
+  margin: 40px 0;
+  line-height: 40px;
+  color: #323232;
+  font-family: "Roboto Condensed Light";
+  font-size: 40px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
 /*
 ** still_have_questions
 */
+.still_have_questions_title {
+  text-align: center;
+  margin: 40px 0;
+  line-height: 40px;
+  color: #323232;
+  font-family: "Roboto Condensed Light";
+  font-size: 40px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.header_main__find_out_the_cost._shq {
+  margin-top: 0;
+}
+
+.header_main__find_out_the_cost._shq .form-icon-name {
+  background-size: 15px 17px;
+}
+
 /*
 ** located_near
 */
+.located_near {
+  margin-top: 60px;
+  position: relative;
+}
+.located_near_title {
+  text-align: center;
+  /*margin: 40px 0;*/
+  line-height: 40px;
+  color: #323232;
+  font-family: "Roboto Condensed Light";
+  font-size: 40px;
+  font-weight: 300;
+  text-transform: uppercase;
+  position: absolute;
+  z-index: 10;
+  top: 40px;
+  width: 100%;
+}
+
+/* стилизация карты */
+ymaps [style="top: 40px; right: 10px; position: absolute;"] {
+  top: 10px !important;
+}
+
+ymaps [style="top: 207px; left: 10px; position: absolute;"] {
+  top: 145px !important;
+}
+
 /*
 ** footer
 */
+.footer {
+  margin: 5px auto 20px;
+}
+.footer_logo {
+  position: absolute;
+  z-index: 10;
+  margin-left: -41px;
+  width: 200px;
+  height: 151px;
+  background-image: url("../img/fig-50.png");
+  background-size: 200px 151px;
+  background-position: center;
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  top: -55px;
+}
 
 /*# sourceMappingURL=style.css.map */

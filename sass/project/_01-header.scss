@@ -17,8 +17,7 @@
             background-size: 200px 151px;
             background-position: center;
             background-attachment: scroll;
-            background-repeat: no-repeat;
-        
+            background-repeat: no-repeat;        
         }
         &__slogan {        
             color: #9C9E9F;
@@ -96,7 +95,7 @@
             color: #323232;
             font-size: 25px;
             font-weight: 400;
-            line-height: 31px;
+            line-height: 31px;            
         }
         &__discount {
             display: inline-block;
@@ -140,11 +139,12 @@
                 font-size: 18px;
                 font-weight: 400;
                 text-align: center;
-                display: block;                
+                display: block; 
+                margin-top: 10px;
             }
             &___form {                
                 width: 780px;
-                margin: 30px auto 0;
+                margin: 20px auto 0;
                 .form-group {
                     margin-left: 0;
                     margin-right: 0;

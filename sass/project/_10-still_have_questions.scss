@@ -3,5 +3,22 @@
 */
 
 .still_have_questions {
-    
+     &_title {
+        text-align: center;
+        margin: 40px 0;
+        line-height: 40px;
+        color: #323232;
+        font-family: "Roboto Condensed Light";
+        font-size: 40px;
+        font-weight: 300;
+        text-transform: uppercase;
+    }
+}
+
+.header_main__find_out_the_cost._shq {
+    margin-top: 0;
+}
+
+.header_main__find_out_the_cost._shq .form-icon-name {
+    background-size: 15px 17px;
 }

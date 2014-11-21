@@ -2,6 +2,22 @@
 ** certificates
 */
 
-.certificates {
-    
+.certificates {    
+    height: 520px;
+    background-image: url('../img/fig-49.png');
+    background-size: 1920px 520px;
+    background-position: center;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    margin-top: 60px;    
+    &_title {
+        text-align: center;
+        margin: 40px 0;
+        line-height: 40px;
+        color: #323232;
+        font-family: "Roboto Condensed Light";
+        font-size: 40px;
+        font-weight: 300;
+        text-transform: uppercase;
+    }
 }

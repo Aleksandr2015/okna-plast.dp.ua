@@ -3,5 +3,19 @@
 */
 
 .footer {
-    
+    margin: 5px auto 20px;
+    &_logo {
+        position: absolute;
+        z-index: 10;
+        margin-left: -41px;
+        width: 200px;
+        height: 151px;
+        background-image: url('../img/fig-50.png');
+        background-size: 200px 151px;
+        background-position: center;
+        background-attachment: scroll;
+        background-repeat: no-repeat;
+        top: -55px;
+    }
 }
+

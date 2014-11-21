@@ -2,6 +2,34 @@
 ** located_near
 */
 
+// карта создана при помощи конструктора карт 
+// http://maps.xdan.ru
+
 .located_near {
-    
+    margin-top: 60px;
+    position: relative;
+    &_title {
+        text-align: center;
+        /*margin: 40px 0;*/
+        line-height: 40px;
+        color: #323232;
+        font-family: "Roboto Condensed Light";
+        font-size: 40px;
+        font-weight: 300;
+        text-transform: uppercase;
+        position: absolute;
+        z-index: 10;
+        top: 40px;
+        width: 100%;
+    }
+}
+
+/* стилизация карты */
+
+ymaps [style="top: 40px; right: 10px; position: absolute;"] {
+    top:10px !important;
+}
+
+ymaps [style="top: 207px; left: 10px; position: absolute;"] {
+    top: 145px !important;
 }
