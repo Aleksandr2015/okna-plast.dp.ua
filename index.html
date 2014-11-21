@@ -21,43 +21,63 @@
     <!--[if lt IE 9]>
     <p class="browsehappy">Вы используете <strong>устаревшую</strong> версию браузера, поэтому страница может работать некорректно. Обновить браузер можно <a href="http://browsehappy.com/">по этой ссылке</a> или перейти на сайт http://browsehappy.com</p>
     <![endif]-->    
-    
-    <!-- Google map -->
-    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
-		<script type="text/javascript">
-			function initialize() {
-				var latlng = new google.maps.LatLng(48.404179, 35.001287);
-				var settings = {
-					zoom: 17,
-					center: latlng,
-					mapTypeControl: true,
-					mapTypeControlOptions: {style: google.maps.MapTypeControlStyle.DROPDOWN_MENU},
-					navigationControl: true,
-					navigationControlOptions: {style: google.maps.NavigationControlStyle.SMALL},
-					mapTypeId: google.maps.MapTypeId.ROADMAP};
-				var map = new google.maps.Map(document.getElementById("map_canvas"), settings);				
-				
-//				var steelplastImage = new google.maps.MarkerImage('img/fig-30.png',
-//					new google.maps.Size(36,59),
-//					new google.maps.Point(0,0),
-//					new google.maps.Point(36,59)
-//				);
-//
-//				var steelplastPos = new google.maps.LatLng(48.404174, 35.001285);
-//
-//				var steelplastMarker = new google.maps.Marker({
-//					position: steelplastPos,
-//					map: map,
-//					icon: steelplastImage,					
-//					title:"Steel Plast",
-//					zIndex: 2
-//				});		
-                
-			}
-		</script>
+        
 </head>
 
-<body onload="initialize()">
+<body>
+     
+    <!-- callback -->
+    <div class="modal fade" id="z-callback" tabindex="-1" role="dialog" aria-labelledby="z-callback" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">          
+          <div class="modal-body">
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Закрыть</span></button>
+            <h4 class="modal-title" id="myModalLabel">Оставьте свои контактные данные <br>и наш менеджер Вам перезвонит</h4>
+            <form class="form-horizontal modal___form" action="z-callback.php" role="form" method="post">
+                <div class="form-group">
+                    <div class="input-group">
+                        <div class="input-group-addon"><span class="form-icon-name"></span></div>
+                        <input class="form-control" id="name" name="name" type="text" placeholder="Как Вас зовут?" required="required" pattern='[A-Za-zА-Яа-яЁё\s]{2,}' title="Поле должно содержать только буквы, не менее 2х">
+                    </div>
+                    <div class="input-group">
+                        <div class="input-group-addon"><span class="form-icon-phone"></span></div>                                
+                        <input class="form-control" id="phone" name="phone" type="text" placeholder="Ваш номер телефона" required="required" pattern="[+()0-9\s]{6,}" title='Поле должно содержать не менее 6 цифр'>
+                    </div>                                       
+                    <button type="submit" class="modal____button">Отправить</button>  
+                    <input type="hidden" name="what_form" value="Нажали на кнопку - <b>Заказать обратный звонок</b> или <b>кнопку оставить заявку.</b><br><br><b>Нужно перезвонить!</b>">
+                </div>
+            </form>            
+          </div>          
+        </div>
+      </div>
+    </div>
+       
+    <!-- callback know_more -->
+    <div class="modal fade" id="z-know_more" tabindex="-1" role="dialog" aria-labelledby="z-know_more" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">          
+          <div class="modal-body">
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Закрыть</span></button>
+            <h4 class="modal-title" id="myModalLabel">Оставьте свои контактные данные <br>и наш менеджер перезвонит Вам <br> через 15 минут</h4>
+            <form class="form-horizontal modal___form" action="z-callback.php" role="form" method="post">
+                <div class="form-group">
+                    <div class="input-group">
+                        <div class="input-group-addon"><span class="form-icon-name"></span></div>
+                        <input class="form-control" id="name" name="name" type="text" placeholder="Как Вас зовут?" required="required" pattern='[A-Za-zА-Яа-яЁё\s]{2,}' title="Поле должно содержать только буквы, не менее 2х">
+                    </div>
+                    <div class="input-group">
+                        <div class="input-group-addon"><span class="form-icon-phone"></span></div>                                
+                        <input class="form-control" id="phone" name="phone" type="text" placeholder="Ваш номер телефона" required="required" pattern="[+()0-9\s]{6,}" title='Поле должно содержать не менее 6 цифр'>
+                    </div>                                       
+                    <button type="submit" class="modal____button">Отправить</button>  
+                    <input type="hidden" name="what_form" value="Нажали на кнопку - <b>Узнать больше</b> в <b>популярных предложениях</b><br><br><b>Нужно перезвонить через 15 минут с момента получения этого письма!</b>">
+                </div>
+            </form>            
+          </div>          
+        </div>
+      </div>
+    </div>
+        
       
     <!-- 01 - header / Start -->
     <header class="header">
@@ -107,7 +127,7 @@
                     
                     <div class="col-xs-8 col-xs-offset-4">
                         
-                        <div class="header_main__button ___button_callback pull-right clearfix">Заказать обратный звонок</div>
+                        <div class="header_main__button ___button_callback pull-right clearfix" data-toggle="modal" data-target="#z-callback">Заказать обратный звонок</div>
                         
                         <span class="header_main__title">
                             ПОЛУЧИТЕ НЕМЕЦКИЕ ОКНА REHAU <br>
@@ -144,17 +164,18 @@
                                Отправьте заявку, и мы перезвоним через 15 минут
                             </span>
                             
-                           <form class="form-horizontal header_main__find_out_the_cost___form" action="/" role="form">
+                            <form class="form-horizontal header_main__find_out_the_cost___form" action="z-callback.php" role="form" method="post">
                                 <div class="form-group">
                                     <div class="input-group">                                  
                                         <div class="input-group-addon"><span class="form-icon-name"></span></div>
-                                        <input class="form-control" id="name" name="name" type="text" placeholder="Как Вас зовут?">
+                                        <input class="form-control" id="name" name="name" type="text" placeholder="Как Вас зовут?" required="required" pattern='[A-Za-zА-Яа-яЁё\s]{2,}' title="Поле должно содержать только буквы, не менее 2х">
                                     </div>
                                     <div class="input-group">  
                                        <div class="input-group-addon"><span class="form-icon-phone"></span></div>                                
-                                        <input class="form-control" id="phone" name="phone" type="phone" placeholder="Ваш номер телефона">
+                                        <input class="form-control" id="phone" name="phone" type="phone" placeholder="Ваш номер телефона" required="required" pattern="[+()0-9\s]{6,}" title='Поле должно содержать не менее 6 цифр'>
                                     </div>                              
                                     <button type="submit" class="header_main__find_out_the_cost___form____button ___button_in_form">Получить просчет</button>
+                                    <input type="hidden" name="what_form" value="Отправилено из формы - <b>Узнать стоимость остекления. Хотят получить просчет.</b><br><br><b>Нужно перезвонить в течении 15 минут с момента получения этого письма!</b>">
                                 </div>
                             </form>
                            
@@ -517,7 +538,7 @@
                             </span>
                         </div>
                         
-                        <div class="popular_offers__offer___button ___button_offers">Узнать больше</div>
+                        <div class="popular_offers__offer___button ___button_offers" data-toggle="modal" data-target="#z-know_more">Узнать больше</div>
                         
                     </div>
                     
@@ -565,7 +586,7 @@
                             </span>
                         </div>
                         
-                        <div class="popular_offers__offer___button ___button_offers">Узнать больше</div>
+                        <div class="popular_offers__offer___button ___button_offers" data-toggle="modal" data-target="#z-know_more">Узнать больше</div>
                         
                     </div>
                     
@@ -610,7 +631,7 @@
                             </span>
                         </div>
                         
-                        <div class="popular_offers__offer___button ___button_offers">Узнать больше</div>
+                        <div class="popular_offers__offer___button ___button_offers" data-toggle="modal" data-target="#z-know_more">Узнать больше</div>
                         
                     </div>
                     
@@ -655,7 +676,7 @@
                             </span>
                         </div>
                         
-                        <div class="popular_offers__offer___button ___button_offers">Узнать больше</div>
+                        <div class="popular_offers__offer___button ___button_offers" data-toggle="modal" data-target="#z-know_more">Узнать больше</div>
                         
                     </div>
                     
@@ -683,17 +704,18 @@
                                Как подобрать пластиковые окна за 30 минут и точно рассчитать размер?
                             </span>
                             
-                           <form class="form-horizontal header_main__find_out_the_cost___form" action="/" role="form">
+                           <form class="form-horizontal header_main__find_out_the_cost___form" action="z-callback.php" role="form" method="post">
                                 <div class="form-group">
                                     <div class="input-group">                                  
                                         <div class="input-group-addon"><span class="form-icon-name"></span></div>
-                                        <input class="form-control" id="name" name="name" type="text" placeholder="Как Вас зовут?">
+                                        <input class="form-control" id="name" name="name" type="text" placeholder="Как Вас зовут?" required="required" pattern='[A-Za-zА-Яа-яЁё\s]{2,}' title="Поле должно содержать только буквы, не менее 2х">
                                     </div>
                                     <div class="input-group">  
                                        <div class="input-group-addon"><span class="form-icon-phone"></span></div>                                
-                                        <input class="form-control" id="phone" name="phone" type="phone" placeholder="Ваш номер телефона">
+                                        <input class="form-control" id="phone" name="phone" type="phone" placeholder="Ваш номер телефона" required="required" pattern="[+()0-9\s]{6,}" title='Поле должно содержать не менее 6 цифр'>
                                     </div>                              
-                                    <button type="submit" class="header_main__find_out_the_cost___form____button ___button_in_form">Получить просчет</button>
+                                    <button type="submit" class="header_main__find_out_the_cost___form____button ___button_in_form">Узнать</button>
+                                    <input type="hidden" name="what_form" value="Отправилено из формы - <b>Хотят узнать как подобрать пластиковые окна за 30 минут и точно рассчитать размер?</b><br><br><b>Нужно перезвонить и рассказать!</b>">
                                 </div>
                             </form>
                            
@@ -973,7 +995,7 @@
                                         <a class="reviews_review__social_link___link clearfix" href="https://vk.com/id21480113" target="_blank">Посмотреть профиль покупателя</a>
                                     </div>
 
-                                    <div class="reviews_review__blockqoute">
+                                    <div class="reviews_review__blockqoute _oneline">
                                         Продукция, представленная в вашем магазине, - выше всяких похвал.
                                     </div>
 
@@ -1138,7 +1160,7 @@
                             на сайте или по телефону
                         </div>
 
-                        <div class="how_we_work_item_button ___button_how_we_work">
+                        <div class="how_we_work_item_button ___button_how_we_work" data-toggle="modal" data-target="#z-callback">
                             Оставить заявку
                         </div>
                     
@@ -1465,17 +1487,18 @@
                            и мы перезвоним вам через 20 минут
                         </span>
                             
-                        <form class="form-horizontal header_main__find_out_the_cost___form" action="/" role="form">
+                        <form class="form-horizontal header_main__find_out_the_cost___form" action="z-callback.php" role="form" method="post">
                             <div class="form-group">
                                 <div class="input-group">                                  
                                     <div class="input-group-addon"><span class="form-icon-name"></span></div>
-                                    <input class="form-control" id="name" name="name" type="text" placeholder="Как Вас зовут?">
+                                    <input class="form-control" id="name" name="name" type="text" placeholder="Как Вас зовут?" required="required" pattern='[A-Za-zА-Яа-яЁё\s]{2,}' title="Поле должно содержать только буквы, не менее 2х">
                                 </div>
                                 <div class="input-group">  
                                    <div class="input-group-addon"><span class="form-icon-phone"></span></div>                                
-                                    <input class="form-control" id="phone" name="phone" type="phone" placeholder="Ваш номер телефона">
+                                    <input class="form-control" id="phone" name="phone" type="phone" placeholder="Ваш номер телефона" required="required" pattern="[+()0-9\s]{6,}" title='Поле должно содержать не менее 6 цифр'>
                                 </div>                              
                                 <button type="submit" class="header_main__find_out_the_cost___form____button ___button_in_form">Перезвоните мне</button>
+                                <input type="hidden" name="what_form" value="Отправилено из блока - <b>Остались вопросы?</b><br><br><b>Нужно перезвонить в течении 20 минут с момента получения этого письма!</b>">
                             </div>
                         </form>
                         
@@ -1497,10 +1520,10 @@
             Мы рядом
         </div>   
         
-        <!-- Карта (начало) -->
-        <div id="ymaps-map-id_2951640" style="width: auto; height: 515px;"></div>        
+        <!-- Карта (начало) -->        
+        <div id="ymaps-map-id_35647347" style="width: auto; height: 515px;"></div>
         <script type="text/javascript">
-        function fid_2951640(ymaps) {
+        function fid_35647347(ymaps) {
             var objects = [];
             var events = {};
             try{
@@ -1508,21 +1531,21 @@
             }catch(e){
                 alert(e);
             };
-            var map; objects["map1"] = map = new ymaps.Map("ymaps-map-id_2951640", {
-                center: [48.40371811790025,35.00133145767211], 
-                zoom: 17,
+            var map; objects["map1"] = map = new ymaps.Map("ymaps-map-id_35647347", {
+                center: [48.40394422204137,35.001364078182036], 
+                zoom: 13,
                 type: "yandex#map",
-                behaviors:['scrollZoom','drag','dblClickZoom']
+                behaviors:['drag','dblClickZoom']
             });
             map.controls
             .add("typeSelector",{"top":40,"right":10})
             .add("zoomControl",{"top":207.5,"left":10});	
             map.geoObjects
-                .add(objects['Point4'] = new ymaps.Placemark([48.404111025227245,35.00130999999951], {"iconContent":"","balloonContent":"","xname":"Point4","metaType":"Point"},{"preset":"twirl#blueStretchyIcon","visible":true,"iconImageHref":"http://api-maps.yandex.ru/2.0.39/release/../images/2c3d90d4e522c1f62b6cf3e59f7a877d.png","iconImageSize":[37,42],"iconImageOffset":[-10,-40],"iconContentLayout":"twirl#geoObjectIconContent","balloonContentBodyLayout":"twirl#geoObjectBalloonBodyContent","hintContentLayout":"twirl#geoObjectHintContent"}));
+                .add(objects['Point4'] = new ymaps.Placemark([48.404178892412666,35.001277813489985], {"iconContent":"Steel Plast - салон «Окна, двери»","xname":"Point4","metaType":"Point"},{"preset":"twirl#blueStretchyIcon","zIndex":"10","visible":true,"iconImageHref":"http://api-maps.yandex.ru/2.0.39/release/../images/2c3d90d4e522c1f62b6cf3e59f7a877d.png","iconImageSize":[37,42],"iconImageOffset":[-10,-40],"iconContentLayout":"twirl#geoObjectIconContent","balloonContentBodyLayout":"twirl#geoObjectBalloonBodyContent","hintContentLayout":"twirl#geoObjectHintContent"}));
 
         };
         </script>
-        <script type="text/javascript" src="http://api-maps.yandex.ru/2.0-stable/?load=package.full&lang=ru-RU&onload=fid_2951640"></script>
+        <script type="text/javascript" src="http://api-maps.yandex.ru/2.0-stable/?load=package.full&lang=ru-RU&onload=fid_35647347"></script>
         <!-- Карта (конец) -->        
 
     </section>   
@@ -1562,7 +1585,7 @@
                     
                     <div class="col-xs-12">
                         
-                        <div class="header_main__button ___button_callback pull-right clearfix">Заказать обратный звонок</div>
+                        <div class="header_main__button ___button_callback pull-right clearfix" data-toggle="modal" data-target="#z-callback">Заказать обратный звонок</div>
                         
                     </div>
                 

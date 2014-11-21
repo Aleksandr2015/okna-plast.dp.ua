@@ -11,7 +11,7 @@
         font-family: "Roboto Condensed Light";
         font-size: 40px;
         font-weight: 300;
-        margin: 60px 0 40px;
+        margin: 50px 0 40px;
     }
     &_image._1 {
         width: 240px;
@@ -100,14 +100,19 @@
             margin-top: 20px;
             color: #323232;
             font-family: "Roboto Condensed Bold";
-            font-size: 18px;
+            font-size: 17px;
             font-weight: 700;
             padding-left: 45px;
             background-image: url('../img/fig-33.png');
             background-size: 35px 39px;
-            background-position: left 7px;
+            background-position: left 6px;
             background-attachment: scroll;
             background-repeat: no-repeat;
+        }
+        &__blockqoute._oneline {
+            background-size: 15px 19px;
+            background-position: left 2px;
+            padding-left: 25px;
         }
         &__text {
             margin-top: 20px;

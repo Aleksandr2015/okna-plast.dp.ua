@@ -1,0 +1,113 @@
+.modal {
+    & .modal-dialog {
+        width: 370px;
+    }
+    & .modal-title {
+        font-family: "Roboto Condensed Regular";
+        color: #323232;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 34px;
+        text-align: center;
+    }
+    & .close {
+        position: absolute;
+        right: 10px;
+        top: 10px;           
+    }    
+    & .modal-content {
+        border-radius: 2px;
+        border: 5px solid #f7c604;
+        background-color: rgba(255,255,255,.9);
+    }
+    &___form {                
+        width: 100%;
+        margin: 0 auto;
+        .form-group {
+            margin-left: 0;
+            margin-right: 0;
+            width: 100%;
+        }                
+        .input-group {
+            width: 221px;
+            height: 32px;
+            margin: 20px auto;            
+            background-color: #FFF;
+            border: 1px solid #C2C2C2;
+            -moz-border-radius: 3px;
+            -webkit-border-radius: 3px;
+            border-radius: 3px;  
+            &:first-child {
+                margin-top: 15px;
+            }
+        }                
+        .input-group-addon {
+            height: 32px;
+            background: transparent;
+            border: none;
+            border-radius: 0;
+            -webkit-box-shadow:none;
+            -moz-box-shadow:none;
+            box-shadow:none;                 
+        }  
+        .form-control {                 
+            color: #B7B7B7;
+            font-family: "Roboto Condensed Regular";
+            font-size: 15px;
+            font-weight: 400;
+            width: 100%;
+            height: 32px !important;
+            padding-left: 0;
+            background: transparent;
+            border: none;
+            border-radius: 0;
+            -webkit-box-shadow:none;
+            -moz-box-shadow:none;
+            box-shadow:none;
+        }                        
+        .form-icon-name {
+            display: inline-block;
+            width: 16px;
+            height: 18px;
+            background-image: url('../img/fig-5.png');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 16px 18px;
+            background-attachment: scroll;
+        }
+        .form-icon-phone {
+            display: inline-block;
+            width: 18px;
+            height: 18px;
+            background-image: url('../img/fig-6.png');
+            background-repeat: no-repeat;
+            background-position: center;                    
+            background-attachment: scroll;
+        }
+    }
+    &____button {
+        width: 221px;
+        height: 32px;
+        display: block;
+        margin: 0 auto;
+        background-color: #0F0F0F;
+        background-image: -moz-linear-gradient(bottom, #0189CD 0%, #39ADE6 100%);
+        background-image: -o-linear-gradient(bottom, #0189CD 0%, #39ADE6 100%);
+        background-image: -webkit-linear-gradient(bottom, #0189CD 0%, #39ADE6 100%);
+        background-image: linear-gradient(to top, #0189CD 0%, #39ADE6 100%);
+        -moz-border-radius: 3px;
+        -webkit-border-radius: 3px;
+        border-radius: 3px;            
+        color: #FFF;
+        font-family: "Roboto Condensed Regular";
+        font-size: 16px;
+        font-weight: 400;
+        text-align: center;                          
+        cursor: pointer;
+        border: none;
+        &:hover, &:active, &:focus {
+            outline: none;
+            border: none;
+        }
+    }
+}
