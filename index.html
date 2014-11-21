@@ -144,7 +144,25 @@
                             Скидка 40% на все окна до 15 ноября
                         </span>
                         
-                        <span class="header_main__counter"></span>
+<!--
+                        <span class="header_main__counter">
+                            
+                            <div class="countdown-wrp">
+                                <div class="time">
+                                    <div class="countdown">
+                                        <div class="timecount"></div>
+                                        <div class="caption">
+                                            <span class="label">дни</span>
+                                            <span class="label">часы</span>
+                                            <span class="label">мин</span>
+                                            <span class="label">сек</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </span>
+-->
                         
                     </div><!-- .col-xs- / end-->
                     
@@ -1595,9 +1613,17 @@
     </footer>   
     <!-- 12 - footer / End -->       
     
-    <!-- Scripts -->
+    <!-- jQuery -->
     <script src="http://code.jquery.com/jquery-latest.js"></script>    
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>    
+    <!-- Counter -->
+    <script src="js/county.js" type="text/javascript"></script>
+    <script type="text/javascript">
+	$(document).ready(function(){
+        $('.timecount').county({ endDateTime: ((new Date()).getTime() + (21*60*60*1000) + (47*60*1000) + (36*1000)), reflection: false, animation: 'scroll', theme: 'black' });
+	});
+    </script>
+    <!-- Bootstrap -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>    
     <!-- Carousel -->
     <script src="js/jquery.jcarousellite.js"></script>    
     <script>

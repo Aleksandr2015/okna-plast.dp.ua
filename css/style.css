@@ -5,6 +5,7 @@
 
 body {
   background: #fff;
+  font-family: "Roboto Condensed Regular";
 }
 
 .___button_callback {
@@ -47,6 +48,46 @@ body {
 
 ._clrl {
   clear: left !important;
+}
+
+.timecount {
+  width: 300px !important;
+}
+
+.caption > .label {
+  color: #c2c2c2 !important;
+}
+
+.county > span {
+  font-family: "Roboto Condensed Bold";
+  width: 50px;
+  display: inline-block;
+  height: 50px;
+  font-size: 35px;
+  line-height: 50px;
+  position: relative;
+  overflow: hidden;
+  margin: 0 20px 0 0px;
+  color: #393939;
+  text-align: center;
+  background: #fff;
+  font-weight: 700;
+  border-radius: 3px;
+}
+
+.county > span:after {
+  content: "";
+  background: url(../img/fig-55.png) no-repeat left top;
+  width: 50px;
+  height: 8px;
+  position: absolute;
+  left: 0;
+  top: 23px;
+}
+
+.county > span > span {
+  display: block;
+  height: inherit;
 }
 
 .popover {
@@ -282,6 +323,7 @@ body {
   line-height: 35px;
   padding-left: 7px;
   margin-left: -10px;
+  float: left;
 }
 .header_main__find_out_the_cost {
   width: 790px;
