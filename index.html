@@ -521,7 +521,7 @@
                             
                             Двухкамерный <br>
                             стеклопакет Guardian Clima <br>
-                            Guard Solar<span class="popular_offers__offer___description____icon"></span><br><br>
+                            Guard Solar<span class="popular_offers__offer___description____icon" data-toggle="popover" title="" data-content="«В наших климатических условиях для окон, которые выходят на улицу, однокамерные стеклопакеты 4-16-4 не подходят»." data-placement="top"></span><br><br>
                             
                             Фурнитура G-U
                         </div>
@@ -569,7 +569,7 @@
                             
                             Двухкамерный <br>
                             стеклопакет Guardian Clima <br>
-                            Guard Solar<span class="popular_offers__offer___description____icon"></span><br><br>
+                            Guard Solar<span class="popular_offers__offer___description____icon" data-toggle="popover" title="" data-content="«В наших климатических условиях для окон, которые выходят на улицу, однокамерные стеклопакеты 4-16-4 не подходят»." data-placement="top"></span><br><br>
                             
                             Фурнитура G-U
                         </div>
@@ -614,7 +614,7 @@
                             
                             Двухкамерный <br>
                             стеклопакет Guardian Clima <br>
-                            Guard Solar<span class="popular_offers__offer___description____icon"></span><br><br>
+                            Guard Solar<span class="popular_offers__offer___description____icon" data-toggle="popover" title="" data-content="«В наших климатических условиях для окон, которые выходят на улицу, однокамерные стеклопакеты 4-16-4 не подходят»." data-placement="top"></span><br><br>
                             
                             Фурнитура G-U
                         </div>
@@ -660,7 +660,7 @@
                             
                             Однокамерный <br>
                             стеклопакет Guardian Clima <br>
-                            Guard Solar<span class="popular_offers__offer___description____icon"></span> - два<br>
+                            Guard Solar<span class="popular_offers__offer___description____icon" data-toggle="popover" title="" data-content="«В наших климатических условиях для окон, которые выходят на улицу, однокамерные стеклопакеты 4-16-4 не подходят»." data-placement="top"></span> - два<br>
                             стекла толщиной по 16 мм.                                                        
                         </div>
                         
@@ -1521,9 +1521,9 @@
         </div>   
         
         <!-- Карта (начало) -->        
-        <div id="ymaps-map-id_35647347" style="width: auto; height: 515px;"></div>
+        <div id="ymaps-map-id_1140437" style="width: auto; height: 515px;"></div>
         <script type="text/javascript">
-        function fid_35647347(ymaps) {
+        function fid_1140437(ymaps) {
             var objects = [];
             var events = {};
             try{
@@ -1531,21 +1531,20 @@
             }catch(e){
                 alert(e);
             };
-            var map; objects["map1"] = map = new ymaps.Map("ymaps-map-id_35647347", {
+            var map; objects["map1"] = map = new ymaps.Map("ymaps-map-id_1140437", {
                 center: [48.40394422204137,35.001364078182036], 
                 zoom: 13,
                 type: "yandex#map",
                 behaviors:['drag','dblClickZoom']
             });
             map.controls
-            .add("typeSelector",{"top":40,"right":10})
             .add("zoomControl",{"top":207.5,"left":10});	
             map.geoObjects
                 .add(objects['Point4'] = new ymaps.Placemark([48.404178892412666,35.001277813489985], {"iconContent":"Steel Plast - салон «Окна, двери»","xname":"Point4","metaType":"Point"},{"preset":"twirl#blueStretchyIcon","zIndex":"10","visible":true,"iconImageHref":"http://api-maps.yandex.ru/2.0.39/release/../images/2c3d90d4e522c1f62b6cf3e59f7a877d.png","iconImageSize":[37,42],"iconImageOffset":[-10,-40],"iconContentLayout":"twirl#geoObjectIconContent","balloonContentBodyLayout":"twirl#geoObjectBalloonBodyContent","hintContentLayout":"twirl#geoObjectHintContent"}));
 
         };
         </script>
-        <script type="text/javascript" src="http://api-maps.yandex.ru/2.0-stable/?load=package.full&lang=ru-RU&onload=fid_35647347"></script>
+        <script type="text/javascript" src="http://api-maps.yandex.ru/2.0-stable/?load=package.full&lang=ru-RU&onload=fid_1140437"></script>
         <!-- Карта (конец) -->        
 
     </section>   
@@ -1596,9 +1595,9 @@
     </footer>   
     <!-- 12 - footer / End -->       
     
+    <!-- Scripts -->
     <script src="http://code.jquery.com/jquery-latest.js"></script>    
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
-    
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>    
     <!-- Carousel -->
     <script src="js/jquery.jcarousellite.js"></script>    
     <script>
@@ -1609,7 +1608,12 @@
             speed: 500,
             circular: false
         });
-    </script> 
-    
+    </script>     
+    <!-- Popover -->
+    <script>
+        $(function () {
+            $('[data-toggle="popover"]').popover()
+        })
+    </script>    
 </body>
 </html>
