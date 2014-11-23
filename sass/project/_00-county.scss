@@ -1,12 +1,14 @@
+.countdown-wrp {
+    position: absolute;
+    right: -25px;
+    top: 87.5%;
+    }
+
 .timecount {
     width: 300px !important;    
 }
 
-.caption > .label {
-    color: #c2c2c2 !important;    
-}
-
-.county > span{
+.county > span {
     font-family: "Roboto Condensed Bold";
     width: 50px;
     display: inline-block;
@@ -20,8 +22,13 @@
     text-align: center;
     background: #fff;
     font-weight: 700;
-    border-radius: 3px;
+    border-radius: 5px;
 }
+
+.county span.county-seconds-wrapper {
+    color: #cf0606;
+}
+
 .county > span:after{
     content:"";
     background: url(../img/fig-55.png) no-repeat left top;
@@ -34,4 +41,21 @@
 .county > span > span {
     display: block;
     height: inherit;
+}
+
+.caption {
+    position: relative;
+    top:-6px;
+}
+
+.caption > .label {
+    color: #C2C2C2;
+    font-family: "Roboto Condensed Regular";
+    font-size: 12px;
+    font-weight: 400;
+    display: inline-block;
+    margin: 0 16px 0 0px;
+    width: 50px;
+    text-align: center;
+    padding: 0;
 }

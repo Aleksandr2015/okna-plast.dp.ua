@@ -8,7 +8,7 @@ $message .= '</body></html>';
 $headers = "MIME-Version: 1.0"."\r\n";
 $headers .= "Content-Type: text/html; charset=utf-8"."\r\n"; // можно отправлять письмо в html
 $headers .= "From: okna-plast.dp.ua";
-mail('charleksvik@gmail.com', 'Заявка c нашего лендинга по окнам', $message, $headers);
+mail('charleksvik@gmail.com, sp344@yandex.ua', 'Заявка c нашего лендинга по окнам', $message, $headers);
 header("location: ".$_SERVER['HTTP_REFERER']);
 //header("Location: after-send.html");
 exit;

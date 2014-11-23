@@ -50,12 +50,43 @@ body {
   clear: left !important;
 }
 
-.timecount {
-  width: 300px !important;
+/* nicescroll */
+#ascrail2000, #ascrail2000-hr {
+  z-index: 999 !important;
 }
 
-.caption > .label {
-  color: #c2c2c2 !important;
+#ascrail2000.nicescroll-rails {
+  width: 10px !important;
+  background-color: #DEEEF1 !important;
+}
+
+#ascrail2000-hr.nicescroll-rails {
+  height: 10px !important;
+  background-color: #DEEEF1 !important;
+}
+
+#ascrail2000 > div {
+  width: 10px !important;
+  background: #0B84C2 !important;
+  border-color: #0B84C2 !important;
+  border-radius: 3px !important;
+}
+
+#ascrail2000-hr > div {
+  height: 10px !important;
+  background: #0B84C2 !important;
+  border-color: #0B84C2 !important;
+  border-radius: 3px !important;
+}
+
+.countdown-wrp {
+  position: absolute;
+  right: -25px;
+  top: 87.5%;
+}
+
+.timecount {
+  width: 300px !important;
 }
 
 .county > span {
@@ -72,7 +103,11 @@ body {
   text-align: center;
   background: #fff;
   font-weight: 700;
-  border-radius: 3px;
+  border-radius: 5px;
+}
+
+.county span.county-seconds-wrapper {
+  color: #cf0606;
 }
 
 .county > span:after {
@@ -88,6 +123,23 @@ body {
 .county > span > span {
   display: block;
   height: inherit;
+}
+
+.caption {
+  position: relative;
+  top: -6px;
+}
+
+.caption > .label {
+  color: #C2C2C2;
+  font-family: "Roboto Condensed Regular";
+  font-size: 12px;
+  font-weight: 400;
+  display: inline-block;
+  margin: 0 16px 0 0px;
+  width: 50px;
+  text-align: center;
+  padding: 0;
 }
 
 .popover {
@@ -107,8 +159,13 @@ body {
   bottom: 3px !important;
 }
 
+.modal-open {
+  padding-right: 0 !important;
+}
+
 .modal {
   z-index: 999;
+  padding-right: 0 !important;
 }
 .modal .modal-dialog {
   width: 370px;
@@ -276,6 +333,9 @@ body {
   background-position: center;
   background-attachment: scroll;
   background-repeat: no-repeat;
+}
+.header_main .container {
+  position: relative;
 }
 .header_main__button {
   background-color: #0F0F0F;

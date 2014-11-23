@@ -1,0 +1,30 @@
+/* nicescroll */
+
+#ascrail2000, #ascrail2000-hr {
+    z-index: 999 !important;
+}
+
+#ascrail2000.nicescroll-rails {
+    width: 10px !important;
+    background-color:  #DEEEF1 !important;
+}
+
+#ascrail2000-hr.nicescroll-rails {
+    height: 10px !important;
+    background-color:  #DEEEF1 !important;
+}
+
+#ascrail2000 > div {
+	width: 10px !important;
+    background: #0B84C2 !important;
+    border-color: #0B84C2!important;
+    border-radius: 3px !important;
+    
+}
+
+#ascrail2000-hr > div {
+	height:10px !important;
+    background: #0B84C2 !important;
+    border-color: #0B84C2!important;
+    border-radius: 3px !important;
+}

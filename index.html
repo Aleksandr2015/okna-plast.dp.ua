@@ -20,8 +20,7 @@
     <![endif]-->
     <!--[if lt IE 9]>
     <p class="browsehappy">Вы используете <strong>устаревшую</strong> версию браузера, поэтому страница может работать некорректно. Обновить браузер можно <a href="http://browsehappy.com/">по этой ссылке</a> или перейти на сайт http://browsehappy.com</p>
-    <![endif]-->    
-        
+    <![endif]-->           
 </head>
 
 <body>
@@ -144,7 +143,6 @@
                             Скидка 40% на все окна до 15 ноября
                         </span>
                         
-<!--
                         <span class="header_main__counter">
                             
                             <div class="countdown-wrp">
@@ -162,7 +160,6 @@
                             </div>
                             
                         </span>
--->
                         
                     </div><!-- .col-xs- / end-->
                     
@@ -1469,7 +1466,13 @@
                         Сертификаты                        
                     </div>                    
                     
-                </div><!-- col-xs- / end -->                
+                </div><!-- col-xs- / end -->        
+                
+                <div class="col-xs-12">
+                
+                    
+                
+                </div>
                 
             </div><!-- .row / end-->
             
@@ -1619,7 +1622,7 @@
     <script src="js/county.js" type="text/javascript"></script>
     <script type="text/javascript">
 	$(document).ready(function(){
-        $('.timecount').county({ endDateTime: ((new Date()).getTime() + (21*60*60*1000) + (47*60*1000) + (36*1000)), reflection: false, animation: 'scroll', theme: 'black' });
+        $('.timecount').county({ endDateTime: ((new Date()).getTime() + (03*24*60*60*1000) + (09*60*60*1000) + (24*60*1000) + (38*1000)), reflection: false, animation: 'scroll', theme: 'black' });
 	});
     </script>
     <!-- Bootstrap -->
@@ -1641,5 +1644,21 @@
             $('[data-toggle="popover"]').popover()
         })
     </script>    
+    <!-- nicescroll -->
+	<script src="js/jquery.nicescroll.min.js"></script>
+	<script>
+		$(document).ready(
+            function() {
+	           $("body").niceScroll();
+            }
+        );		
+    </script>
+	<noscript>
+		<style>
+	        html, body {
+				overflow:visible;
+			}
+        </style>
+    </noscript>
 </body>
 </html>

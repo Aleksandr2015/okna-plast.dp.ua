@@ -53,8 +53,11 @@
         }
     }
     &_main {
+        & .container {
+            position: relative;
+        }
         position: relative;
-        z-index: 1;
+        z-index: 1;  //мешал nicescroll был над ним а нужно чтобы под ним
         margin: 0 auto;        
         height: 750px;
         background-image: url('../img/fig-2.png');
