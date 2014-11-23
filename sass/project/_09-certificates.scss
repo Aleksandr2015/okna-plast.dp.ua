@@ -10,6 +10,46 @@
     background-attachment: scroll;
     background-repeat: no-repeat;
     margin-top: 60px;    
+    &_carousel {
+        height: 332px;    
+        width: 100%;
+        padding: 10px 100px 20px 100px;
+        overflow: hidden;
+        position: relative;
+        &__carousel {
+            height: auto;
+            width: 750px !important;
+            &___img {
+                margin-right: 30px;
+            }            
+        }    
+    }
+    &_carousel_next {
+        width: 27px;
+        height: 55px;
+        background-image: url('../img/fig-56.png');
+        background-size: 27px 55px;
+        background-position: center;
+        background-attachment: scroll;
+        background-repeat: no-repeat;
+        cursor: pointer;
+        position: absolute;
+        right: 20px;
+        top:40%;
+    }
+    &_carousel_prev {
+        width: 27px;
+        height: 55px;
+        background-image: url('../img/fig-57.png');
+        background-size: 27px 55px;
+        background-position: center;
+        background-attachment: scroll;
+        background-repeat: no-repeat;
+        cursor: pointer;
+        position: absolute;
+        left: 20px;
+        top:40%;
+    }
     &_title {
         text-align: center;
         margin: 40px 0;

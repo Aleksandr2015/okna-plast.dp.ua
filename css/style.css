@@ -1333,6 +1333,46 @@ body {
   background-repeat: no-repeat;
   margin-top: 60px;
 }
+.certificates_carousel {
+  height: 332px;
+  width: 100%;
+  padding: 10px 100px 20px 100px;
+  overflow: hidden;
+  position: relative;
+}
+.certificates_carousel__carousel {
+  height: auto;
+  width: 750px !important;
+}
+.certificates_carousel__carousel___img {
+  margin-right: 30px;
+}
+.certificates_carousel_next {
+  width: 27px;
+  height: 55px;
+  background-image: url("../img/fig-56.png");
+  background-size: 27px 55px;
+  background-position: center;
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+  top: 40%;
+}
+.certificates_carousel_prev {
+  width: 27px;
+  height: 55px;
+  background-image: url("../img/fig-57.png");
+  background-size: 27px 55px;
+  background-position: center;
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  position: absolute;
+  left: 20px;
+  top: 40%;
+}
 .certificates_title {
   text-align: center;
   margin: 40px 0;
