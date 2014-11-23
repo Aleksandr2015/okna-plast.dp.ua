@@ -70,6 +70,8 @@ body {
   background: #0B84C2 !important;
   border-color: #0B84C2 !important;
   border-radius: 3px !important;
+  background-clip: padding-box;
+  /* stops bg color from leaking outside the border: */
 }
 
 #ascrail2000-hr > div {
@@ -77,6 +79,8 @@ body {
   background: #0B84C2 !important;
   border-color: #0B84C2 !important;
   border-radius: 3px !important;
+  background-clip: padding-box;
+  /* stops bg color from leaking outside the border: */
 }
 
 .countdown-wrp {

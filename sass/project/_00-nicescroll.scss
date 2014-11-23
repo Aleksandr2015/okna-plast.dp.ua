@@ -18,7 +18,7 @@
 	width: 10px !important;
     background: #0B84C2 !important;
     border-color: #0B84C2!important;
-    border-radius: 3px !important;
+    @include border-radius(3px !important);
     
 }
 
@@ -26,5 +26,5 @@
 	height:10px !important;
     background: #0B84C2 !important;
     border-color: #0B84C2!important;
-    border-radius: 3px !important;
+    @include border-radius(3px !important);
 }

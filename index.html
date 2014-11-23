@@ -1470,7 +1470,26 @@
                 
                 <div class="col-xs-12">
                 
-                    
+                    <div class="mouseWheelButtons">
+                        
+                        <div class="carousel">
+                            
+                            <ul>
+                                <li>1</li>
+                                <li>2</li>
+                                <li>3</li>
+                                <li>4</li>
+                                <li>5</li>
+                                <li>6</li>
+                            </ul>                            
+                            
+                        </div>
+                        
+                        <div class="prev">пред</div>
+                        
+                        <div class="next">сдел</div>                        
+                        
+                    </div>
                 
                 </div>
                 
@@ -1660,5 +1679,13 @@
 			}
         </style>
     </noscript>
+    <!-- sertificates carousel -->
+    <script>
+        $(".mouseWheelButtons .carousel").jCarouselLite({
+            btnNext: ".mouseWheelButtons .next",
+            btnPrev: ".mouseWheelButtons .prev",
+            mouseWheel: true
+        });
+    </script>
 </body>
 </html>
