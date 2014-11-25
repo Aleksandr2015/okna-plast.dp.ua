@@ -1,4 +1,7 @@
-﻿(function ($) {
+// source
+// http://www.egrappler.com/free-jquery-count-down-plugin-county
+
+(function ($) {
     $.fn.county = function (options) {
         var settings = $.extend({ endDateTime: new Date(), animation: 'fade', reflection: true, reflectionOpacity: 0.2, speed: 500, theme: 'black' }, options);
 

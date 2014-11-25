@@ -1686,9 +1686,8 @@
     <script src="js/county.js" type="text/javascript"></script>
     <script type="text/javascript">
         $(document).ready(function(){
-            $('.timecount').county({ endDateTime: (                
-                (new Date()).getTime() + (03*24*60*60*1000) + (09*60*60*1000) + (24*60*1000) + (38*1000)), reflection: false, animation: 'scroll', theme: 'black' }
-            );
+            //$('.timecount').county({ endDateTime: ((new Date()).getTime() + (30*24*60*60*1000) + (09*60*60*1000) + (24*60*1000) + (38*1000)), reflection: false, animation: 'scroll', theme: 'black'});
+            $('.timecount').county({ endDateTime: new Date('2014/12/25 18:00:00'), reflection: false, animation: 'scroll', theme: 'black' });
 	   });
     </script>
     <!-- bootstrap -->
@@ -1729,6 +1728,11 @@
         $(document).ready(
             function() {
 	           $(".modal").niceScroll();
+            }            
+        );
+        $(document).ready(
+            function() {
+	           $(".reviews_review__text_full").niceScroll();
             }            
         );
     </script>
