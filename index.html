@@ -77,7 +77,42 @@
       </div>
     </div>
         
-      
+    <!-- sertificates big -->
+        <!-- sertificate-big-1 -->
+        <div class="modal fade" id="sertificate-big-1" tabindex="-1" role="dialog" aria-labelledby="sertificate-big-1" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">          
+              <div class="modal-body">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Закрыть</span></button>                            
+                <img class="certificates_carousel__carousel___img" src="../img/fig-59-big.png" width="600" alt="Сертификат на готовое изделие">
+              </div>          
+            </div>
+          </div>
+        </div> 
+        <!-- sertificate-big-2 -->
+        <div class="modal fade" id="sertificate-big-2" tabindex="-1" role="dialog" aria-labelledby="sertificate-big-2" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">          
+              <div class="modal-body">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Закрыть</span></button>                            
+                <img class="certificates_carousel__carousel___img" src="../img/fig-60-big.png" width="600" alt="Сан заключение стр. 1">
+                <img class="certificates_carousel__carousel___img" src="../img/fig-60-big-1.png" width="600" alt="Сан заключение стр. 2">
+              </div>          
+            </div>
+          </div>
+        </div>
+        <!-- sertificate-big-3 -->
+        <div class="modal fade" id="sertificate-big-3" tabindex="-1" role="dialog" aria-labelledby="sertificate-big-3" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">          
+              <div class="modal-body">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Закрыть</span></button>
+                <img class="certificates_carousel__carousel___img" src="../img/fig-61-big.png" width="600" alt="Сертификат соответствия">
+              </div>          
+            </div>
+          </div>
+        </div>  
+          
     <!-- 01 - header / Start -->
     <header class="header">
 
@@ -1473,31 +1508,31 @@
                             
                             <ul>
                                 <!-- img 1 -->
-                                <li><img class="certificates_carousel__carousel___img" src="../img/fig-58.png" width="231" height="326" alt=""></li>
+                                <li><img class="certificates_carousel__carousel___img" src="../img/fig-59.png" width="231" height="326" alt="Сертификат на готовое изделие" data-toggle="modal" data-target="#sertificate-big-1"></li>
                                 <!-- img 2 -->
-                                <li><img class="certificates_carousel__carousel___img" src="../img/fig-58.png" width="231" height="326" alt=""></li>
+                                <li><img class="certificates_carousel__carousel___img" src="../img/fig-60.png" width="231" height="326" alt="Сан заключение" data-toggle="modal" data-target="#sertificate-big-2"></li>
                                 <!-- img 3 -->
-                                <li><img class="certificates_carousel__carousel___img" src="../img/fig-58.png" width="231" height="326" alt=""></li>
+                                <li><img class="certificates_carousel__carousel___img" src="../img/fig-61.png" width="231" height="326" alt="Сан заключение" data-toggle="modal" data-target="#sertificate-big-3"></li>
                                 <!-- img 4 -->
-                                <li><img class="certificates_carousel__carousel___img" src="../img/fig-58.png" width="231" height="326" alt=""></li>
+<!--                                <li><img class="certificates_carousel__carousel___img" src="../img/fig-58.png" width="231" height="326" alt=""></li>-->
                                 <!-- img 5 -->
-                                <li><img class="certificates_carousel__carousel___img" src="../img/fig-58.png" width="231" height="326" alt=""></li>
+<!--                                <li><img class="certificates_carousel__carousel___img" src="../img/fig-58.png" width="231" height="326" alt=""></li>-->
                                 <!-- img 6 -->
-                                <li><img class="certificates_carousel__carousel___img" src="../img/fig-58.png" width="231" height="326" alt=""></li>
+<!--                                <li><img class="certificates_carousel__carousel___img" src="../img/fig-58.png" width="231" height="326" alt=""></li>-->
                                 <!-- img 7 -->
-                                <li><img class="certificates_carousel__carousel___img" src="../img/fig-58.png" width="231" height="326" alt=""></li>
+<!--                                <li><img class="certificates_carousel__carousel___img" src="../img/fig-58.png" width="231" height="326" alt=""></li>-->
                                 <!-- img 8 -->
-                                <li><img class="certificates_carousel__carousel___img" src="../img/fig-58.png" width="231" height="326" alt=""></li>
+<!--                                <li><img class="certificates_carousel__carousel___img" src="../img/fig-58.png" width="231" height="326" alt=""></li>-->
                                 <!-- img 9 -->
-                                <li><img class="certificates_carousel__carousel___img" src="../img/fig-58.png" width="231" height="326" alt=""></li>
+<!--                                <li><img class="certificates_carousel__carousel___img" src="../img/fig-58.png" width="231" height="326" alt=""></li>-->
                                 
                             </ul>                            
                             
                         </div><!-- certificates_carousel__carousel / end -->
                         
-                        <div class="certificates_carousel_prev"></div>
+<!--                        <div class="certificates_carousel_prev"></div>-->
                         
-                        <div class="certificates_carousel_next"></div>                        
+<!--                        <div class="certificates_carousel_next"></div>-->
                         
                     </div><!-- certificates_carousel / end -->
                 
@@ -1689,8 +1724,13 @@
 		$(document).ready(
             function() {
 	           $("body").niceScroll();
-            }
-        );		
+            }            
+        );	
+        $(document).ready(
+            function() {
+	           $(".modal").niceScroll();
+            }            
+        );
     </script>
         <noscript>
             <style>

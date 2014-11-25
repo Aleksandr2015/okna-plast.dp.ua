@@ -163,6 +163,18 @@ body {
   bottom: 3px !important;
 }
 
+.modal#sertificate-big-1 .modal-dialog,
+.modal#sertificate-big-2 .modal-dialog,
+.modal#sertificate-big-3 .modal-dialog,
+.modal#sertificate-big-4 .modal-dialog,
+.modal#sertificate-big-5 .modal-dialog,
+.modal#sertificate-big-6 .modal-dialog,
+.modal#sertificate-big-7 .modal-dialog,
+.modal#sertificate-big-8 .modal-dialog,
+.modal#sertificate-big-9 .modal-dialog {
+  width: 640px !important;
+}
+
 .modal-open {
   padding-right: 0 !important;
 }
@@ -1350,6 +1362,7 @@ body {
 }
 .certificates_carousel__carousel___img {
   margin-right: 30px;
+  cursor: pointer;
 }
 .certificates_carousel_next {
   width: 27px;
