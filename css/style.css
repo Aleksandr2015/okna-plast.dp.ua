@@ -15,12 +15,28 @@ body {
   z-index: 5;
 }
 
+.___button_callback:hover,
+.___button_callback:active,
+.___button_callback:focus {
+  background-color: #0F0F0F;
+  background-image: -webkit-linear-gradient(bottom, #39ADE6 0%, #0189CD 100%);
+  background-image: linear-gradient(to top, #39ADE6 0%, #0189CD 100%);
+}
+
 .___button_in_form {
   width: 199px;
   height: 35px;
   line-height: 30px;
   margin-top: -1px;
   z-index: 5;
+}
+
+.___button_in_form:hover,
+.___button_in_form:active,
+.___button_in_form:focus {
+  background-color: #0F0F0F;
+  background-image: -webkit-linear-gradient(bottom, #39ADE6 0%, #0189CD 100%);
+  background-image: linear-gradient(to top, #39ADE6 0%, #0189CD 100%);
 }
 
 .___button_offers {
@@ -30,11 +46,27 @@ body {
   z-index: 5;
 }
 
+.___button_offers:hover,
+.___button_offers:active,
+.___button_offers:focus {
+  background-color: #0F0F0F;
+  background-image: -webkit-linear-gradient(bottom, #39ADE6 0%, #0189CD 100%);
+  background-image: linear-gradient(to top, #39ADE6 0%, #0189CD 100%);
+}
+
 .___button_how_we_work {
   width: 121px;
   height: 26px;
   line-height: 26px;
   z-index: 5;
+}
+
+.___button_how_we_work:hover,
+.___button_how_we_work:active,
+.___button_how_we_work:focus {
+  background-color: #0F0F0F;
+  background-image: -webkit-linear-gradient(bottom, #39ADE6 0%, #0189CD 100%);
+  background-image: linear-gradient(to top, #39ADE6 0%, #0189CD 100%);
 }
 
 .plpr {
